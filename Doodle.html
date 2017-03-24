@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title> DoodlePad </title>
+        <link rel="stylesheet" type="text/css" href="DoodleCSS.css">
+        <script src="Doodle.js"></script>
+    </head>
+
+    <body onresize="onResize()" onload="onload()">
+         <h1 class="title"> DoodlePad </h1>
+        <canvas id="myCanvas" onmousemove="draw()"> </canvas>
+        <!-- Color buttons -->
+        <input type="range" name="range" min="1" max="200" value="20" step="1" onChange="setSize(this.value)"> </input>
+        <button id="b-green" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#26d354')"> </button>
+        <button id="b-lightgreen" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#b3fcb9')"> </button>
+        <button id="b-neongreen" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#bcf902')"> </button>
+        <button id="b-seagreen" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#20B2AA')"> </button>
+        <button id="b-blue" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#2267d6')"> </button>
+        <button id="b-lightblue" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#a5c7ff')"> </button>
+        <button id="b-navyblue" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#000070')"> </button>
+        <button id="b-red" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#d81717')"> </button>
+        <button id="b-redbrown" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#A52A2A')"> </button>
+        <button id="b-raspberry" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#E30B5D')"> </button>
+        <button id="b-crimson" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#890200')"> </button>
+        <button id="b-black" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#000000')"> </button>
+        <button id="b-yellow" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#fcf644')"> </button>
+        <button id="b-brightyellow" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#f6ff00')"> </button>
+        <button id="b-purple" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#8e2ee8')"> </button>
+        <button id="b-lightpurple" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#9e61f9')"> </button>
+        <button id="b-darkpurple" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#4a0070')"> </button>
+        <button id="b-pink" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#ff32e7')"> </button>
+        <button id="b-lightpink" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#fcb3ef')"> </button>
+        <button id="b-brown" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#4f2b0a')"> </button>
+        <button id="b-gray" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#6d6965')"> </button>
+        <button id="b-orange" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#ef8828')"> </button>
+        <button id="b-tan" type="button" onclick="getElementById('myCanvas').innerHTML = setColor('#D2B48C')"> </button>
+        <button id="b-eraser" type="button" onclick="getElementById('myCanvas').innerHTML = setEraser()"> Eraser </button>
+        <button id="b-clear" type="button" onclick="getElementById('myCanvas').innerHTML = clearCanvas()"> Clear All </button>
+        <select id="brush-stroke" onchange="toggleShape(this.value)">
+            <option value="prompt"> Please Choose a Brush Style :: </option>
+            <option value="Circle"> Circle </option>
+            <option value="Square"> Square </option>
+            <option value="Experimental"> Experimental(Currently Broken) </option>
+        </select>
+    </body>
+
+</html>

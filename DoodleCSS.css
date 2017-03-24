@@ -1,0 +1,173 @@
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+#myCanvas {
+  width: 99.9%;
+  height: 87.5%;
+  border: 1px solid black;
+  float: center;
+}
+h1 {
+    text-align: center;
+    height: 1.2%;
+    font-style: italic;
+    text-shadow: 2px 2px 10px #000000;
+    animation-name: titlecolor;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+button {
+    border: 1px solid black;
+    padding: 0;
+    width:3.39%;
+    height:5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -2;
+    cursor: pointer;
+}
+input {
+    width: 22%;
+    height:5%;
+    padding: 0;
+    margin: -2;
+}
+select {
+    width: 33.33%;
+    height: 4%;
+    border: 1px solid black;
+    padding: 0;
+    margin: -2;
+}
+#b-green {
+    background-color: #26d354;
+    color: black;
+}
+#b-lightgreen {
+    background-color: #b3fcb9;
+    color: black;
+}
+#b-neongreen {
+    background-color: #bcf902;
+    color: black;
+}
+#b-seagreen {
+    background-color: #20B2AA;
+    color: black;
+}
+#b-blue {
+    background-color: #2267d6;
+    color: black;
+}
+#b-lightblue {
+    background-color: #a5c7ff;
+    color: black;
+}
+#b-navyblue {
+    background-color: #000070;
+    color: white;
+}
+#b-red {
+    background-color: #d81717;
+    color: black;
+}
+#b-redbrown {
+    background-color: #A52A2A;
+    color: black;
+}
+#b-raspberry {
+    background-color: #E30B5D;
+    color: black;
+}
+#b-crimson {
+    background-color: #890200;
+    color: black;
+}
+#b-black {
+    background-color: #000000;
+    color: white;
+}
+#b-yellow {
+    background-color: #fcf644;
+    color: black;
+}
+#b-brightyellow {
+    background-color: #f6ff00;
+    color: black;
+}
+#b-purple {
+    background-color: #8e2ee8;
+    color: black;
+}
+#b-lightpurple {
+    background-color: #9e61f9;
+    color: black;
+}
+#b-darkpurple {
+    background-color: #4a0070;
+    color: white;
+}
+#b-pink {
+    background-color: #ff32e7;
+    color: black;
+}
+#b-lightpink {
+    background-color: #fcb3ef;
+    color: black;
+}
+#b-brown {
+    background-color: #4f2b0a;
+    color: white;
+}
+#b-gray {
+    background-color: #6d6965;
+    color: black;
+}
+#b-orange {
+    background-color: #ef8828;
+    color: black;
+}
+#b-tan {
+    background-color: #D2B48C;
+    color:black;
+}
+#b-eraser {
+    width: 33.33%;
+    height: 4%;
+    border: 1px solid black;
+}
+#b-clear {
+    width: 33.33%;
+    height: 4%;
+    border: 1px solid black;
+}
+@keyframes titlecolor {
+    4.34% {color: #26d354;}
+    8.68% {color: #b3fcb9;}
+    13.02% {color: #bcf902;}
+    17.36% {color: #20B2AA;}
+    20.7% {color: #2267d6;}
+    25.04% {color: #a5c7ff;}
+    29.38% {color:  #000070;}
+    33.72% {color: #d81717;}
+    38.06% {color: #A52A2A;}
+    42.4% {color: #E30B5D;}
+    46.74% {color:  #890200;}
+    51.08% {color: #000000;}
+    55.42% {color: #fcf644;}
+    59.76% {color: #f6ff00;}
+    64.1% {color: #8e2ee8;}
+    68.44% {color: #9e61f9;}
+    72.78% {color:  #4a0070;}
+    77.12% {color: #ff32e7;}
+    81.46% {color: #fcb3ef;}
+    85.8% {color: #4f2b0a;}
+    90.14% {color: #6d6965;}
+    94.48% {color: #ef8828;}
+    98.82% {color: #D2B48C;}
+    100% {color: black;}
+}
